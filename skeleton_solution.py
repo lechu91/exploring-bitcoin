@@ -1,3 +1,5 @@
+print("Run code")
+
 from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
 
 rpcuser='quaker_quorum'
