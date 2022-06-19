@@ -6,3 +6,6 @@ rpcport=8332
 rpcip='3.134.159.30'
 
 rpc_connection = AuthServiceProxy("http://%s:%s@%s:%s"%(rpcuser, rpcpassword, rpcip, rpcport))
+
+best_block_hash = rpc_connection.getbestblockhash()
+print(rpc_connection.getblock(best_block_hash))
